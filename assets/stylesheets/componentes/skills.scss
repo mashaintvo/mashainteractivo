@@ -2,7 +2,10 @@
 
 .bg-skills {
   background-color: $pink;
-  padding: 3rem;
+  padding: 5rem 3rem;
+  @include media(768px){
+    padding: 3rem;
+  }
   .col-md-3 {
     @include flexBox(flex, center, center);
   }

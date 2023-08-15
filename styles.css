@@ -280,7 +280,12 @@
 }
 .bg-skills {
   background-color: #e73c7e;
-  padding: 3rem;
+  padding: 5rem 3rem;
+}
+@media (max-width: 768px) {
+  .bg-skills {
+    padding: 3rem;
+  }
 }
 .bg-skills .col-md-3 {
   display: flex;
