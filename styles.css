@@ -132,7 +132,7 @@
   max-height: 9.375rem;
 }
 .banner .context h1 {
-  font-size: 3.125rem;
+  font-size: 3.75rem;
   color: white;
   font-weight: bold;
   line-height: 1.2;
@@ -166,7 +166,7 @@
   }
 }
 .banner .context span {
-  font-size: 1.25rem;
+  font-size: 1.875rem;
   color: white;
 }
 @media (max-width: 1024px) {
