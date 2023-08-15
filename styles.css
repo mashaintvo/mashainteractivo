@@ -78,9 +78,6 @@
 .menu a {
   color: #23a6d5;
 }
-.menu a:hover {
-  color: #e73c7e;
-}
 .menu a.nav-link:after {
   width: 0;
   height: 0.125rem;
@@ -89,7 +86,10 @@
   display: block;
   background: #e73c7e;
 }
-.menu a.nav-link:hover:after {
+.menu a.nav-link:hover, .menu a.nav-link.active {
+  color: #e73c7e;
+}
+.menu a.nav-link:hover:after, .menu a.nav-link.active:after {
   width: 100%;
 }
 @media (max-width: 768px) {

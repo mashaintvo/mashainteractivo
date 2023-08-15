@@ -71,9 +71,6 @@
   }
   a {
     color: $blue;
-    &:hover{
-      color: $pink;
-    }
     &.nav-link{
       &:after{
         @include width-height(0, toRem(2));
@@ -82,7 +79,8 @@
         display: block;
         background: $pink;
       }
-      &:hover{
+      &:hover, &.active{
+        color: $pink;
         &:after{
           width: 100%;
         }
