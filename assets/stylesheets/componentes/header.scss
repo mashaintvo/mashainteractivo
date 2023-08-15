@@ -73,16 +73,20 @@
     color: $blue;
     &:hover{
       color: $pink;
-      &:after{
-        width: 100%;
-      }
     }
-    &:after{
-      @include width-height(0, toRem(2));
-      content: "";
-      transition: width .35s ease-in-out;
-      display: block;
-      background: $pink;
+    &.nav-link{
+      &:after{
+        @include width-height(0, toRem(2));
+        content: "";
+        transition: width .35s ease-in-out;
+        display: block;
+        background: $pink;
+      }
+      &:hover{
+        &:after{
+          width: 100%;
+        }
+      }
     }
   }
   @include media(768px) {

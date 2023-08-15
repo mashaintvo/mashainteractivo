@@ -61,7 +61,7 @@
     .imgBanner {
       @include flexBox(flex, center, center);
       img {
-        max-height: toRem(640);
+        max-height: 50rem;
         @include media(1024px) {
           max-height: toRem(400);
         }

@@ -81,16 +81,16 @@
 .menu a:hover {
   color: #e73c7e;
 }
-.menu a:hover:after {
-  width: 100%;
-}
-.menu a:after {
+.menu a.nav-link:after {
   width: 0;
   height: 0.125rem;
   content: "";
   transition: width 0.35s ease-in-out;
   display: block;
   background: #e73c7e;
+}
+.menu a.nav-link:hover:after {
+  width: 100%;
 }
 @media (max-width: 768px) {
   .menu {
@@ -186,7 +186,7 @@
   align-items: center;
 }
 .banner .context .imgBanner img {
-  max-height: 40rem;
+  max-height: 50rem;
 }
 @media (max-width: 1024px) {
   .banner .context .imgBanner img {
