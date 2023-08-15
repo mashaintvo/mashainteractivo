@@ -17,9 +17,10 @@
     align-items: center;
     height: 100vh;
     margin: 0;
-    padding: 0 3rem;
+    padding: 0 6rem;
     @include media(1024px){
       height: auto;
+      padding: 0 2rem;
     }
     img {
       max-height: toRem(150);
