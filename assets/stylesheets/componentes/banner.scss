@@ -25,7 +25,7 @@
       max-height: toRem(150);
     }
     h1 {
-      @include text(toRem(50), white, bold, 1.2);
+      @include text(toRem(60), white, bold, 1.2);
       margin-top: 1rem;
       &:before {
         @include width-height(30%, toRem(3));
@@ -49,7 +49,7 @@
       }
     }
     span {
-      @include text(toRem(20), white, null, null);
+      @include text(toRem(30), white, null, null);
       @include media(1024px) {
         font-size: 1.5rem;
       }
