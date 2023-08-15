@@ -1,0 +1,37 @@
+// Footer
+
+.footer {
+  background-color: $green;
+  padding: 2rem 3rem;
+  img {
+    max-height: toRem(40);
+  }
+  p {
+    color: white;
+    margin-bottom: 0;
+    border-left: 1px solid white;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    @include media(1024px) {
+      margin-left: 0;
+      padding-left: 0;
+      margin-top: 0.5rem;
+      border: 0;
+      text-align: center;
+    }
+  }
+  a {
+    &:hover {
+      i {
+        color: $pink;
+      }
+    }
+  }
+  i {
+    @include text(toRem(28), white, null, null);
+    margin-left: 1rem;
+    @include media(768px) {
+      margin: 1rem;
+    }
+  }
+}

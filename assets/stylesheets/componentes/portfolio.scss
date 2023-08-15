@@ -1,0 +1,93 @@
+// Portfolio
+
+section {
+  padding: 3.5rem 0rem;
+  .content {
+    @include width-height(100%, 100%);
+    background: $gray-light;
+    display: block;
+  }
+  .title {
+    @include text(2.5rem, null, 600, null);
+    flex-grow: 1;
+    h3 {
+      line-height: 3.2rem;
+    }
+  }
+
+  .showcase {
+    position: relative;
+    &-container {
+      width: 100%;
+      max-width: 90%;
+      margin: 0 auto;
+      display: flex;
+    }
+    &-left {
+      width: 60%;
+      padding: 0 1rem;
+    }
+    &-right {
+      width: 60%;
+      padding: 0 1rem;
+    }
+  }
+  .carousel-indicator {
+    display: flex;
+    &__button {
+      @include width-height(toRem(30), toRem(30));
+      border-radius: 50%;
+      margin: 0rem 0.5rem;
+      cursor: pointer;
+      @include media(768px) {
+        @include width-height(toRem(20), toRem(20));
+      }
+    }
+    &--active {
+      outline: 1px solid $gray;
+      outline-offset: 0.25rem;
+    }
+    .blue {
+      background: $blue;
+    }
+  }
+  .carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    &-wrapper {
+      @include width-height(100%, 100%);
+      position: relative;
+      z-index: 1;
+      display: flex;
+      transition-property: transform;
+      box-sizing: content-box;
+      transition: transform 1s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    }
+    &-item {
+      @include width-height(100%, 100%);
+      @include flexBox(flex, center, center);
+      flex-shrink: 0;
+      position: relative;
+      transition-property: transform;
+      margin-right: 0;
+    }
+  }
+  .preview-image {
+    height: 100%;
+    display: grid;
+    .preview-image__items {
+      grid-area: 1/1/ 2/-1;
+      opacity: 0;
+      transition: opacity 1s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+      &.preview-image--active {
+        opacity: 1;
+        z-index: 1;
+      }
+    }
+  }
+}

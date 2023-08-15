@@ -1,0 +1,51 @@
+// Skills
+
+.bg-skills {
+  background-color: $pink;
+  padding: 3rem;
+  .col-md-3 {
+    @include flexBox(flex, center, center);
+  }
+  .card {
+    width: 100%;
+    cursor: pointer;
+    &:hover {
+      .content {
+        transform: rotateY(0.5turn);
+      }
+    }
+    .content {
+      text-align: center;
+      position: relative;
+      transition: all 2.25s;
+      background-color: white;
+      color: $pink;
+      padding: 5em;
+      transform-style: preserve-3d;
+    }
+    .front,
+    .back {
+      @include positionBox(absolute, 0, 0, 0, 0);
+      padding: 2em;
+      transform-style: preserve-3d;
+      backface-visibility: hidden;
+    }
+    .title {
+      transform: translateZ(5rem);
+      font-size: 2rem;
+    }
+    .subtitle {
+      transform: translateZ(2rem);
+    }
+    .back {
+      @include flexBox(flex, center, center);
+      transform: rotateY(0.5turn);
+      background-color: $green;
+      padding: 1rem;
+    }
+    .description {
+      @include text(toRem(15), white, null, null);
+      transform: translateZ(3rem);
+    }
+  }
+}

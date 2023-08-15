@@ -1,0 +1,21 @@
+// Modal
+
+.modal-content {
+  border: 0;
+  border-radius: 25px;
+  .modal-header {
+    border-bottom: 0;
+  }
+  .modal-title {
+    color: $blue;
+  }
+  .modal-body {
+    i {
+      @include width-height(toRem(30), toRem(30));
+      @include flexBox(flex, center, center);
+      background-color: $blue;
+      border-radius: 100%;
+      color: white;
+    }
+  }
+}

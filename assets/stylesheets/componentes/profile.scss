@@ -1,0 +1,58 @@
+// Profile
+
+.circle {
+  @include flexBox(flex, center, center);
+  border-radius: 100%;
+  img {
+    @include width-height(toRem(450), toRem(450));
+    object-fit: cover;
+    border-radius: 100%;
+    @include media(1024px) {
+      @include width-height(toRem(200), toRem(200));
+      margin: auto;
+    }
+    @include media(768px) {
+      @include width-height(toRem(150), toRem(150));
+    }
+  }
+}
+.gradient-border {
+  @include width-height(toRem(500), toRem(500));
+  position: relative;
+  background: white;
+  border-radius: 100%;
+  &::after {
+    @include positionBox(absolute, calc(-1 * 3px), null, null, calc(-1 * 3px));
+    @include width-height(calc(100% + 3px * 2), calc(100% + 3px * 2));
+    content: "";
+    z-index: -1;
+    background: linear-gradient(
+      60deg,
+      hsl(224, 85%, 66%),
+      hsl(269, 85%, 66%),
+      hsl(314, 85%, 66%),
+      hsl(359, 85%, 66%),
+      hsl(44, 85%, 66%),
+      hsl(89, 85%, 66%),
+      hsl(134, 85%, 66%),
+      hsl(179, 85%, 66%)
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: 100%;
+    animation: moveGradient 4s alternate infinite;
+  }
+  @include media(1024px) {
+    @include width-height(toRem(230), toRem(230));
+    margin: auto;
+  }
+  @include media(768px) {
+    @include width-height(toRem(180), toRem(180));
+    margin: auto;
+  }
+}
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
