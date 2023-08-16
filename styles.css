@@ -366,7 +366,7 @@ section .showcase-container {
   margin: 0 auto;
   display: flex;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section .showcase-container {
     flex-wrap: wrap;
   }
@@ -375,7 +375,7 @@ section .showcase-left {
   width: 60%;
   padding: 0 1rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section .showcase-left {
     width: 100%;
     padding: 0;
@@ -385,7 +385,7 @@ section .showcase-right {
   width: 60%;
   padding: 0 1rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section .showcase-right {
     width: 100%;
     padding: 0;
