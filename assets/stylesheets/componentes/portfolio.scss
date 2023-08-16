@@ -22,14 +22,25 @@ section {
       max-width: 90%;
       margin: 0 auto;
       display: flex;
+      @include media(768px) {
+        flex-wrap: wrap;
+      }
     }
     &-left {
       width: 60%;
       padding: 0 1rem;
+      @include media(768px) {
+        width: 100%;
+        padding: 0;
+      }
     }
     &-right {
       width: 60%;
       padding: 0 1rem;
+      @include media(768px) {
+        width: 100%;
+        padding: 0;
+      }
     }
   }
   .carousel-indicator {
