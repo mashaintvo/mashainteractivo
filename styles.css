@@ -458,6 +458,10 @@ section .preview-image .preview-image__items.preview-image--active {
   z-index: 1;
 }
 
+.button-autoplay-carousel i {
+  color: transparent;
+}
+
 .footer {
   background-color: #23d5ab;
   padding: 2rem 3rem;
