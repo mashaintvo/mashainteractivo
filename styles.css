@@ -462,6 +462,31 @@ section .preview-image .preview-image__items.preview-image--active {
   color: transparent;
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1750px);
+  }
+}
+.otherDesign {
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+  padding: 1rem 0 5rem 0;
+}
+.otherDesign .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: 3500px;
+}
+.otherDesign .slide {
+  height: auto;
+  width: 250px;
+}
+
 .footer {
   background-color: #23d5ab;
   padding: 2rem 3rem;
