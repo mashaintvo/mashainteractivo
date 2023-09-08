@@ -467,7 +467,7 @@ section .preview-image .preview-image__items.preview-image--active {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-1750px);
+    transform: translateX(-1500px);
   }
 }
 .otherDesign {
@@ -480,7 +480,7 @@ section .preview-image .preview-image__items.preview-image--active {
 .otherDesign .slide-track {
   animation: scroll 40s linear infinite;
   display: flex;
-  width: 3500px;
+  width: 3000px;
 }
 .otherDesign .slide {
   height: auto;
